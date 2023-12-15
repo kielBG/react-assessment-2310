@@ -52,7 +52,7 @@ It is similar to the require keyword.
     document.getElementById('app')
     );
 
-    Put name of component here: 
+    Put name of component here: FishTable is the name of the component being rendered. 
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -86,7 +86,9 @@ var fishData = [
 
     Where is fishData being passed in and how will it be referenced? And what is the ReactJS term for how fishData will be referenced?
 
-    Answer: 
+    Answer: fishData is being prop drilled to the FishTable component. So the fishData state is being propdrilled to the FishTable child component and will be referenced as fishes.
+    <FishTable fishes={fishData}/> in this example, FishTable is the component being rendered, fishes is the name the state will be referenced by as its prop in FishTable, and {fishData} is the state in the app.jsx.
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -120,7 +122,8 @@ var fishData = [
 
     What is the purpose of this code: fishes={fishData}?
 
-    answer: 
+    answer: This is the prop drilling format in react. fishes is the name that the state will be called in its prop in the child component and {fishData} is the state itself in the app.jsx that is being prop drilled. 
+    
 
 
 
